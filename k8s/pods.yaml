@@ -8,6 +8,6 @@ metadata:
 spec: 
   containers:
     - name: kubernetes-pod
-      image: nimesh25/flask-app
+      image: nimesh25/flask-app:v1.2-using-cache 
       ports:
         - containerPort: 31111

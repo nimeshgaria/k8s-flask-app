@@ -15,7 +15,7 @@ spec:
     spec: 
       containers:
       - name: kubernetes-pod
-        image: nimesh25/flask-app
+        image: nimesh25/flask-app:v1.2-using-cache 
         imagePullPolicy: Always
         ports:
         - containerPort: 31111
