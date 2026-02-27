@@ -1,0 +1,13 @@
+# Create your pod here
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubernetes-pod
+  labels:
+    project: kubernetes-project
+spec: 
+  containers:
+    - name: kubernetes-pod
+      image: nimesh25/flask-app
+      ports:
+        - containerPort: 31111

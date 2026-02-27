@@ -1,0 +1,15 @@
+# Create your service here
+apiVersion: v1
+kind: Service 
+metadata:
+  name: kubernetes-svc
+spec:
+  type: NodePort 
+  selector:
+    project: kubernetes-project
+  ports:
+  - port: 31111 
+    protocol: TCP
+    targetPort: 5000
+    nodePort: 31111
+    
